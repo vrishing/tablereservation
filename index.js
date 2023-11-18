@@ -7,7 +7,7 @@ const cors = require("cors");
 app = express();
 
 mongoose.set("strictQuery",true);
-mongoose.connect("mongodb+srv://restodemo:12345@cluster0.gbg52ck.mongodb.net/restodemoseats")
+mongoose.connect("") // enter mongodb URI
 var db = mongoose.connection;
 db.on("open",()=>console.log("Connected to database"));
 db.on("error",()=>console.log("Error"));
